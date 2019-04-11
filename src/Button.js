@@ -1,3 +1,5 @@
+import React, { Component } from 'react';
+
 function Button(props){
   function handleClick(e) {
     e.preventDefault();

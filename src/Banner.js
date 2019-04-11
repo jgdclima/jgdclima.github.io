@@ -1,3 +1,5 @@
+import React, { Component } from 'react';
+
 function Banner(props) {
   return (
     <div className = "Banner">
