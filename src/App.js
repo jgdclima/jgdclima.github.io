@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import './Header.js';
-import './Banner.js';
-import './Button.js';
+import Header from './Header';
+import Banner from './Banner';
+import Button from './Button';
 
 class App extends Component {
   render() {
