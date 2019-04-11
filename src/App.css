@@ -1,3 +1,22 @@
+Header {
+  width: 100vw;
+  padding: 10px 50px;
+  position: absolute;
+  background-color: #000;
+}
+
+Button .primary {
+  float: left;
+}
+Button .secondary {
+  float: right;
+}
+
+Banner {
+  width: 100vw;
+  padding: 100px;
+}
+
 .App {
   text-align: center;
 }
@@ -31,3 +50,5 @@
     transform: rotate(360deg);
   }
 }
+
+/*# sourceMappingURL=App.css.map */
