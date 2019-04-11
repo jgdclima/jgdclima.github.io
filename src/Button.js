@@ -6,7 +6,7 @@ function Button(props){
     props.fun();
   }
   return(
-    <div className="Button">
+    <div className="Button" + {props.class}>
       <p>{props.text}</p>
     </div>
   );
