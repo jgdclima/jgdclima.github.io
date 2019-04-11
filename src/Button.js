@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 function Button(props){
   function handleClick(e) {
     e.preventDefault();
-    props.fun;
+    props.fun();
   }
   return(
     <div className="Button">
