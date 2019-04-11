@@ -6,7 +6,7 @@ function Button(props){
     props.fun();
   }
   let className = "Button";
-  className += this.props.class;
+  className += props.class;
   return(
     <div className={className}>
       <p>{props.text}</p>
