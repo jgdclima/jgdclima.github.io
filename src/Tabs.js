@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import Tab from './Tab'
+import Tab from './Tab';
+require("@babel/core").transform("code", {
+  plugins: ["@babel/plugin-proposal-class-properties"]
+});
 
 function Tabs(props){
 
-  static PropTypes = {
+  static propTypes = {
     children: PropTypes.instanceOf(Array).isRequired,
   }
 
