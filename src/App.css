@@ -5,10 +5,10 @@
   background-color: #000;
 }
 
-.Button .primary {
+.Button.primary {
   float: left;
 }
-.Button .secondary {
+.Button.secondary {
   float: right;
 }
 
