@@ -1,18 +1,15 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Tab from './Tab';
-require("@babel/core").transform("code", {
-  plugins: ["@babel/plugin-proposal-class-properties"]
-});
 
-function Tabs(props){
 
+class Tabs extends Component {
   static propTypes = {
     children: PropTypes.instanceOf(Array).isRequired,
   }
 
   constructor(props) {
-  super(props);
+    super(props);
 
     this.state = {
       activeTab: this.props.children[0].props.label,
@@ -22,6 +19,7 @@ function Tabs(props){
   onClickTabItem = (tab) => {
     this.setState({ activeTab: tab });
   }
+
   render() {
     const {
       onClickTabItem,
@@ -33,13 +31,13 @@ function Tabs(props){
       }
     } = this;
 
-    return(
-      <div className="Tabs">
+    return (
+      <div className="tabs">
         <ol className="tab-list">
-          {children.map((child) =>{
-            const {label} = child.props;
+          {children.map((child) => {
+            const { label } = child.props;
 
-            return(
+            return (
               <Tab
                 activeTab={activeTab}
                 key={label}

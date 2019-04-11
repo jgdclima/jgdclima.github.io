@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-function Tab(props){
+class Tab extends Component {
 
-  static propTypes = {
+  static PropTypes = {
     activeTab: PropTypes.string.isRequired,
     label: PropTypes.string.isRequired,
     onClick: PropTypes.func.isRequired,
@@ -29,9 +29,13 @@ function Tab(props){
       className += ' tab-list-active';
     }
 
-  return(
-    <div className="Tab">
-      {props.children}
-    </div>
-  );
+    return(
+      <li
+        className={className}
+        onClick={onClick}
+      >
+        {label}
+      </li>
+    );
+  }
 }
