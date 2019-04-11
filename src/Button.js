@@ -5,8 +5,10 @@ function Button(props){
     e.preventDefault();
     props.fun();
   }
+  let className = "Button";
+  className += this.props.class;
   return(
-    <div className="Button" + {props.class}>
+    <div className={className}>
       <p>{props.text}</p>
     </div>
   );
