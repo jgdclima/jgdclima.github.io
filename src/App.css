@@ -1,18 +1,18 @@
-Header {
+.Header {
   width: 100vw;
   padding: 10px 50px;
   position: absolute;
   background-color: #000;
 }
 
-Button .primary {
+.Button .primary {
   float: left;
 }
-Button .secondary {
+.Button .secondary {
   float: right;
 }
 
-Banner {
+.Banner {
   width: 100vw;
   padding: 100px;
 }
