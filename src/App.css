@@ -1,24 +1,43 @@
 .Header {
   width: 100vw;
   padding: 10px 50px;
-  position: absolute;
   background-color: #000;
 }
 
-.Button.primary {
+.tabs {
+  list-style: none;
+  width: 100%;
+}
+
+.tab-list-item {
+  display: inline-block;
+  list-style: none;
+  margin-bottom: -1px;
+  padding: 5px 5%;
+}
+.tab-list-item.primary {
   float: left;
 }
-.Button.secondary {
+.tab-list-item.secondary {
   float: right;
 }
 
-.Banner {
-  width: 100vw;
-  padding: 100px;
+.tab-list-active {
+  background-color: white;
+  border: solid #ccc;
+  border-width: 1px 1px 0 1px;
 }
 
-.App {
-  text-align: center;
+.button.primary {
+  float: left;
+}
+.button.secondary {
+  float: right;
+}
+
+.banner {
+  width: 100vw;
+  padding: 100px;
 }
 
 .App-logo {

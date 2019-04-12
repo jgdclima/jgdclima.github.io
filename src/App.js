@@ -10,22 +10,20 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header></Header>
         <Tabs>
-          <div label="JL">
-            Home
+          <div label="JL" hierarchy="primary">
             <Banner></Banner>
           </div>
-          <div label="Projects">
+          <div label="Projects" hierarchy="secondary">
             Projects
           </div>
-          <div label="Creative">
+          <div label="Creative" hierarchy="secondary">
             Creative
           </div>
-          <div label="Case Studies">
+          <div label="Case Studies" hierarchy="secondary">
             Case Studies
           </div>
-          <div label="Resume">
+          <div label="Resume" hierarchy="secondary">
             Resume
           </div>
         </Tabs>

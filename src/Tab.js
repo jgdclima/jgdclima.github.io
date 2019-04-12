@@ -7,10 +7,11 @@ class Tab extends Component {
     activeTab: PropTypes.string.isRequired,
     label: PropTypes.string.isRequired,
     onClick: PropTypes.func.isRequired,
+    hierarchy: PropTypes.string.isRequired,
   };
 
   onClick = () => {
-    const { label, onClick } = this.props;
+    const { label, onClick, hierarchy } = this.props;
     onClick(label);
   }
 
@@ -20,10 +21,11 @@ class Tab extends Component {
       props: {
         activeTab,
         label,
+        hierarchy,
       },
     } = this;
 
-    let className = 'tab-list-item';
+    let className = 'tab-list-item ' + hierarchy;
 
     if (activeTab === label) {
       className += ' tab-list-active';
